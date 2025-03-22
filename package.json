@@ -1,0 +1,20 @@
+{
+  "name": "course-2025-03-dsad",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts",
+    "prebuild": "rimraf dist/",
+    "build": "tsc",
+    "preview": "node dist/main.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.16",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "rimraf": "^5.0.10"
+  }
+}
