@@ -1,4 +1,3 @@
-import { NumberQueue } from "./number-queue.mjs";
 import { GenericQueue } from "./generic-queue.mjs";
 
 const queue = new GenericQueue<number>();
