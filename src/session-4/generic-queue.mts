@@ -1,8 +1,8 @@
 export class GenericQueue<T> {
   private items: T[];
 
-  public constructor() {
-    this.items = [];
+  public constructor(items: T[] = []) {
+    this.items = [...items];
   }
 
   public enqueue(item: T): void {
