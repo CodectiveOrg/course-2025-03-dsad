@@ -1,5 +1,5 @@
 export class GenericQueue<T> {
-  private items: T[];
+  protected items: T[];
 
   public constructor(items: T[] = []) {
     this.items = [...items];
