@@ -5,6 +5,11 @@ import { traverse } from "./traverse.mjs";
 let head: Node | null = sampleHead;
 
 function removeNodeByIndex(targetIndex: number): void {
+  if (targetIndex === 0) {
+    head = head?.next ?? null;
+    return;
+  }
+
   let current = head;
   let index = 0;
 

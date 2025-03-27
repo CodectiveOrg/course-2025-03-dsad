@@ -5,6 +5,12 @@ import { traverse } from "./traverse.mjs";
 let head: Node | null = sampleHead;
 
 function addNodeAtIndex(node: Node, targetIndex: number): void {
+  if (targetIndex === 0) {
+    node.next = head;
+    head = node;
+    return;
+  }
+
   let current = head;
   let index = 0;
 
