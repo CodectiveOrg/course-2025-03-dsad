@@ -10,7 +10,7 @@ export class GenericStack<T> {
   }
 
   public pop(): T | null {
-    if (this.size()) {
+    if (this.size() === 0) {
       return null;
     }
 
