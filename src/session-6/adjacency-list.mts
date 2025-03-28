@@ -4,6 +4,12 @@ const adjacencyList: number[][] = [
   //
   [1, 2],
   [3, 4],
+  [5, 6, 7],
+  [8, 9],
+  [10],
+  [],
+  [],
+  [],
   [],
   [],
   [],
@@ -20,4 +26,6 @@ for (let id = 0; id < adjacencyList.length; id++) {
   }
 }
 
-console.log(nodes[0].children[0].children[1].data);
+// console.log(nodes[0].children[0].children[1].data);
+
+export const root = nodes[0];
