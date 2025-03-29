@@ -35,7 +35,7 @@ function bfs(target: number, id: number, visited: Set<number>): boolean {
 function findTarget(target: number): boolean {
   const visited = new Set<number>();
 
-  for (let id = 0; id <= values.length; id++) {
+  for (let id = 0; id < values.length; id++) {
     const result = bfs(target, id, visited);
     if (result) {
       return true;
