@@ -10,4 +10,5 @@ function gridTraveler(m: number, n: number): number {
   return gridTraveler(m - 1, n) + gridTraveler(m, n - 1);
 }
 
+// console.log(gridTraveler(3, 2));
 console.log(gridTraveler(15, 15));
