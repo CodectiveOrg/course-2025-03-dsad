@@ -12,11 +12,11 @@ function bstTraverseAscending(node: TreeNode | null): void {
 }
 
 const t1 = binaryTreeFromAdjacencyList(
-  [8, 3, 10, 1, 6, 14],
+  [8, 3, 10, 1, 6, null, 14],
   [
     [1, 2],
     [3, 4],
-    [null, 5],
+    [null, 6],
     [null, null],
     [null, null],
     [null, null],

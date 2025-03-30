@@ -28,15 +28,19 @@ export function binaryTreeFromArray(
 }
 
 export function binaryTreeFromAdjacencyList(
-  values: number[],
+  values: (number | null)[],
   adjacencyList: [number | null, number | null][],
-): TreeNode {
-  const nodes: TreeNode[] = [];
+): TreeNode | null {
+  const nodes: (TreeNode | null)[] = [];
   for (let i = 0; i < values.length; i++) {
-    nodes.push(new TreeNode(values[i]));
+    nodes.push(values[i] ? new TreeNode(values[i]!) : null);
   }
 
   adjacencyList.forEach((children, i) => {
+    if (!nodes[i]) {
+      return;
+    }
+
     nodes[i].left = children[0] ? nodes[children[0]] : null;
     nodes[i].right = children[1] ? nodes[children[1]] : null;
   });
