@@ -17,4 +17,4 @@ function canSum(targetSum: number, numbers: number[]): boolean {
 }
 
 // console.log(canSum(7, [2, 3]));
-console.log(canSum(200, [7, 14]));
+console.log(canSum(270, [7, 14]));
