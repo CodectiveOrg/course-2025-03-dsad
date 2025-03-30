@@ -1,5 +1,5 @@
 function howSum(targetSum: number, numbers: number[]): number[] | null {
-  const table = Array(targetSum + 1).fill(null);
+  const table = Array(targetSum + Math.max(...numbers) + 1).fill(null);
   table[0] = [];
 
   for (let i = 0; i <= targetSum; i++) {

@@ -1,5 +1,5 @@
 function canSum(targetSum: number, numbers: number[]): boolean {
-  const table = Array(targetSum + 1).fill(false);
+  const table = Array(targetSum + Math.max(...numbers) + 1).fill(false);
   table[0] = true;
 
   for (let i = 0; i <= targetSum; i++) {
